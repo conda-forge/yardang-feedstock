@@ -1,5 +1,5 @@
 {% set name = "yardang" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/y/yardang/yardang-{{ version }}.tar.gz
-  sha256: c2aeec6a44d860b563b1f75752d826643ae2b064f5c467c444f48f4e9464b853
+  sha256: ef40a5c01119a11234bbe9b79055f138d355ca4d7ec9b97d26799d2ca4bcaf6f
 
 build:
   number: 0
@@ -33,6 +33,7 @@ requirements:
     - sphinx-autoapi
     - sphinx-copybutton
     - sphinx-design
+    - sphinxcontrib-mermaid
     - toml
     - typer
 
