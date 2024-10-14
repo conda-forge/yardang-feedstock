@@ -29,11 +29,11 @@ requirements:
     - myst-nb
     - packaging
     - rich
-    - sphinx >=7.2.6,<8.1
+    - sphinx >=7.2.6,<9
     - sphinx-autoapi
     - sphinx-copybutton
     - sphinx-design
-    - sphinxcontrib-mermaid
+    - sphinxcontrib-mermaid >=1
     - toml
     - typer
 
