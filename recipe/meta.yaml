@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/y/yardang/yardang-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/y/yardang/yardang-{{ version }}.tar.gz
   sha256: 95f6e649656f01c00bd1633ab1f6f8aa2d79119baa8924da157772484478b959
 
 build:
@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - autodoc-pydantic
     - furo
     - myst-nb
@@ -39,6 +39,7 @@ requirements:
 
 test:
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
