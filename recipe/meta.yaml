@@ -33,7 +33,8 @@ requirements:
     - sphinx-autoapi
     - sphinx-copybutton
     - sphinx-design
-    - sphinxcontrib-mermaid >=1
+    - sphinxcontrib-mermaid >=1.1,<2
+    - sphinx-reredirects
     - toml
     - typer
 
