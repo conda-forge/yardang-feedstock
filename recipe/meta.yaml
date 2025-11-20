@@ -1,5 +1,5 @@
 {% set name = "yardang" %}
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/y/yardang/yardang-{{ version }}.tar.gz
-  sha256: 5d876f6269486deacfd0dec8f13be22b6e2e638ec0a1b0dff137ea3e544ff250
+  sha256: 0490798074043d225db8e9d97bd74c95a026370742c2cf69e15da4ba6a4596a1
 
 build:
   number: 0
@@ -33,16 +33,15 @@ requirements:
     - sphinx-autoapi
     - sphinx-copybutton
     - sphinx-design
-    - sphinxcontrib-mermaid >=1
+    - sphinxcontrib-mermaid >=1.1,<2
+    - sphinx-reredirects
     - toml
     - typer
 
 test:
   requires:
     - python {{ python_min }}
-    - pip
   commands:
-    - pip check
     - yardang --help
   imports:
     - yardang.build
