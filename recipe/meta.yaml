@@ -1,5 +1,5 @@
 {% set name = "yardang" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/y/yardang/yardang-{{ version }}.tar.gz
-  sha256: df2184b4241cf5b8e3f77150675f8c94dce4d14e492be396358b3232fe5a85a7
+  sha256: 450c738890a3273abd5f2b82fcfc14cad48028a8b4e2dd2fea243a4eddda1035
 
 build:
   number: 0
