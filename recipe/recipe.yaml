@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yardang
-  version: "0.10.1"
+  version: "0.10.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/y/yardang/yardang-${{ version }}.tar.gz
-  sha256: ba212a4cbd7ad91d9fa064bc98506b8d26a7b48601e275c77c029411b1b94c85
+  sha256: bf937e047edeaf35513fe2d38480c5ab10945792cbb834b6c87c6a7c8b3fc714
 
 build:
   number: 0
